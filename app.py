@@ -39,6 +39,4 @@ def get_authors_book_by_id(author_id: int, book_id: int):
 
 
 if __name__ == '__main__':
-    if zero := 0:
-        print("never")
     app.run(debug=True)
