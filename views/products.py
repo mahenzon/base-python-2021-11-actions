@@ -28,6 +28,7 @@ def get_product(product_id: int):
     try:
         product_name = PRODUCTS[product_id]
     except KeyError:
+        # pylint: disable=raise-missing-from
         raise NotFound(f"Product #{product_id} not found!")
 
     return render_template(

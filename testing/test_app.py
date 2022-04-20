@@ -16,4 +16,3 @@ def test_get_item(client):
     response = client.get(url)
     assert response.status_code == HTTPStatus.OK, response.data
     assert response.json == {"item_id": item_id}
-
